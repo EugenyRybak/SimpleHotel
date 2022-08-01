@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext,cyrillic,cyrillic-ext,greek-ext,greek,vietnamese);
+
+.BackgroundLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 959px;
+  left: 0px;
+  top: 0px;
+  background-image: url('/public/IMG_20210312_140957_174\ 1\ \(1\).svg');
+  filter: blur(8px);
+  border: 1px solid #000000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.LoginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  position: absolute;
+  width: 409px;
+  height: 382px;
+  left: calc(50% - 409px/2 - 0.5px);
+  top: calc(50% - 382px/2);
+  background: #FFFFFF;
+  box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+}
+
+.LoginFormText {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 345px;
+  height: 28px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #424242;
+}
+
+.InputBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  width: 345px;
+  height: 176px;
+}
+
+.InputForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 7px;
+  width: 345px;
+  height: 76px;
+}
+
+.LabelText {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;;
+  color: #424242;
+}
+
+.InputSize {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 15px;
+  gap: 10px;
+  width: 345px;
+  height: 50px;
+  background: #FFFFFF;
+  border: 1px solid #C9CACC;
+  border-radius: 4px;
+}
+
+.ButtonLogin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  gap: 10px;
+  width: 345px;
+  height: 50px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: linear-gradient(104.34deg, #41522E -15.34%, #BE8022 145.95%);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  flex: none;
+}
+
+.ButtonLogin:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+  linear-gradient(104.34deg, #41522E -15.34%, #BE8022 145.95%);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.ButtonLogin:active {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  linear-gradient(104.34deg, #41522E -15.34%, #BE8022 145.95%);
+  border-radius: 4px;
+}
+
+.ErrorText {
+  height: 14px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: #EB1717;
+}
