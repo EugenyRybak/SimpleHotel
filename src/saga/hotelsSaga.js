@@ -8,7 +8,7 @@ export function checkOutDate(days, date) {
 }
 
 async function fetchHotelsFromApi(location, daysNumber, date) {
-  const response = await fetch (`http://engine.hotellook.com/api/v2/cache.json?location=${location}&currency=rub&checkIn=${date}&checkOut=${checkOutDate(daysNumber, date)}&limit=10`)
+  const response = await fetch (`https://engine.hotellook.com/api/v2/cache.json?location=${location}&currency=rub&checkIn=${date}&checkOut=${checkOutDate(daysNumber, date)}&limit=10`)
   return await response.json()
  }
 
