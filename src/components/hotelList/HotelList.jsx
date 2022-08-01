@@ -7,15 +7,15 @@ import "./HotelList.css";
 
 function HotelList() {
   const allHotels = useSelector((state) => state.hotels.hotels);
+  const favHotels = useSelector((state) => state.hotels.favorites);
   const currentDate = useSelector((state) => state.hotels.date);
   const numberOfDays = useSelector((state) => state.hotels.daysNumber);
-  const favorit = allHotels?.filter((hotel) => hotel.isFavorites === true);
   const location = useSelector((state) => state.hotels.location);
 
   let lengthsHotels;
-  if (favorit.length === 1) {
+  if (favHotels.length === 1) {
     lengthsHotels = "отель";
-  } else if (favorit.length > 1 && favorit.length < 5) {
+  } else if (favHotels.length > 1 && favHotels.length < 5) {
     lengthsHotels = "отеля";
   } else {
     lengthsHotels = "отелей";
@@ -44,7 +44,7 @@ function HotelList() {
       </div>
       <Carousel />
       <div className="HotelList">
-        <span className="HotelListText">{`Добавлено в Избранное: ${favorit.length} ${lengthsHotels}`}</span>
+        <span className="HotelListText">{`Добавлено в Избранное: ${favHotels.length} ${lengthsHotels}`}</span>
         <div className="HotelListCards">
           <CommonHotelList
             withDomik
